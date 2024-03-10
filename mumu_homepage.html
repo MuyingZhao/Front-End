@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MuMu Homepage</title>
+<style type="text/css">
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: white;
+}
+
+/* 页眉/Blog 标题 */
+.header {
+  padding: 60px;
+  color: white; 
+  font-size: 30px;
+  text-align: center;
+  background-image: url("C:/Users/zmy/Pictures/Saved Pictures/sunrise.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  margin-bottom: 10px;
+}
+
+.header img {
+  display: inline-block;
+  width: 8%;
+  border-radius: 50%;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+h2 {
+  padding: 10px;
+  background-color: green;
+  width: auto;
+}
+
+/* 设置上导航栏的样式 */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(0, 128, 128);
+}
+
+/* 设置 topnav 链接的样式 */
+.topnav a {
+  float: left;
+  width: 6%;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* 改变鼠标悬停时的颜色 */
+.topnav a:hover {
+  background-color: rgb(58, 80, 81);
+  color: white;
+}
+
+.topnav a:active {
+  background-color: green;
+  color: black;
+}
+.topnav a:visited {
+  background-color: rgb(9, 43, 9);
+  color: white;
+}
+
+/* 创建两个不相等的彼此并排的浮动列 */
+/* 左列 */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* 右列 */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+.card .myheadimg {
+  display: block;
+  float: left;
+  padding: 10px;
+  position: relative;
+  width: 20%;
+  left: 10px;
+  top: 10px;
+}
+
+.card .simpleintro {
+  float: right;
+  width: 80%;
+  font-size: 20px;
+  padding: 10px;
+  padding-bottom: 20px;
+  position: relative;
+  top: 10px;
+  line-height: 30px;
+}
+
+
+/* 伪图像 */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* 为文章添加卡片效果 */
+.card {
+  background-color: rgb(70, 128, 128);
+  padding: 20px;
+  margin-top: 10px;
+  color: aliceblue;
+  height: auto;
+}
+
+.card p{
+  position: relative;
+  left: 10px;
+  top: 15px;
+  width: 95%;
+  margin: 10px;
+  word-wrap: break-word;
+  text-indent: 30px;
+}
+
+.passage p{
+  position: relative;
+  width: 95%;
+  word-wrap: break-word;
+  text-indent: 4;
+  color: green;
+}
+
+.card .passage {
+  padding: 10px;
+  border: #aaa;
+  width: 100%;
+  height: 100%;
+  background-image: url("C:/Users/zmy/Pictures/Saved Pictures/passage_background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  opacity: 0.3;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* 创建并排的四个等列 */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* 清除列之后的浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 页脚 */
+.footer {
+  padding: 20px;
+  text-align: center;
+  color: aliceblue;
+  font-size: 10px;
+  background: rgb(0, 95, 95);
+  margin-top: 20px;
+}
+
+/* 响应式布局 - 当屏幕的宽度小于 800 像素时，使两列堆叠而不是并排 */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* 响应式布局 - 当屏幕的宽度小于 400 像素时，使导航链接堆叠而不是并排 */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="C:/Users/zmy/Pictures/Saved Pictures/profile.jpg "></img>
+  <h1>MuMu's Homepage</h1>
+  <p>Resize the browser window to see the effect.</p>
+</div>
+
+<div class="topnav">
+  <a href="#c1">Introduction</a>
+  <a href="#c2">PASSAGES</a>
+  <a href="#c3">PHOTOS</a>
+  <a herf="#c4" style="float:right">Secret</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card" id="c1">
+      <h2>INTRODUCTION</h2>
+      <div class="myheadimg">
+        <img src="C:/Users/zmy/Pictures/Saved Pictures/myhead.jpg"  alt="my head!" width="150" height="150"></img>
+      </div>
+      <div class="simpleintro">
+      name: MuMu <br>
+      address: Chengdu, Sichuan. <br>
+      telephone: 18782992134 <br>
+      college: Hunan Univerity <br>
+      postcode: 610200 <br>
+      </div>
+      <p>
+        The policeman on the beat moved up the avenue impressively. The impressiveness was habitual and not for show, for spectators were few. The time was barely 10 o'clock at night, but chilly gusts of wind with a taste of rain in them had well nigh depeopled the streets.
+        Trying doors as he went, twirling his club with many intricate and artful movements, turning now and then to cast his watchful eye adown the pacific thoroughfare, the officer, with his stalwart form and slight swagger, made a fine picture of a guardian of the peace. The vicinity was one that kept early hours. Now and then you might see the lights of a cigar store or of an all-night lunch counter; but the majority of the doors belonged to business places that had long since been closed.</p>
+      <p>
+        When about midway of a certain block the policeman suddenly slowed his walk. In the doorway of a darkened hardware store a man leaned, with an unlighted cigar in his mouth. As the policeman walked up to him the man spoke up quickly.
+        "It's all right, officer," he said, reassuringly. "I'm just waiting for a friend. It's an appointment made twenty years ago. Sounds a little funny to you, doesn't it? Well, I'll explain if you'd like to make certain it's all straight. About that long ago there used to be a restaurant where this store stands--'Big Joe' Brady's restaurant."
+      </p>
+    </div>
+    <br   style = "clear:both;" />  
+    
+    <div class="card" id="c2">
+      <h2>PASSAGES</h2>
+      
+      <div class="passage">
+        <h3 style="text-align:center; color: green;">
+          After Twenty Years
+        </h3>
+       <p>
+        "Twenty years ago to-night," said the man, "I dined here at 'Big Joe' Brady's with Jimmy Wells, my best chum, and the finest chap in the world. He and I were raised here in New York, just like two brothers, together. I was eighteen and Jimmy was twenty. The next morning I was to start for the West to make my fortune. You couldn't have dragged Jimmy out of New York; he thought it was the only place on earth. Well, we agreed that night that we would meet here again exactly twenty years from that date and time, no matter what our conditions might be or from what distance we might have to come. We figured that in twenty years each of us ought to have our destiny worked out and our fortunes made, whatever they were going to be."
+       </p>
+       <p>
+        "It sounds pretty interesting," said the policeman. "Rather a long time between meets, though, it seems to me. Haven't you heard from your friend since you left?"
+       </p>
+       <p>
+        "Well, yes, for a time we corresponded," said the other. "But after a year or two we lost track of each other. You see, the West is a pretty big proposition, and I kept hustling around over it pretty lively. But I know Jimmy will meet me here if he's alive, for he always was the truest, stanchest old chap in the world. He'll never forget. I came a thousand miles to stand in this door to-night, and it's worth it if my old partner turns up."
+       </p>
+       <p>
+        "You bet! I hope Jimmy has done half as well. He was a kind of plodder, though, good fellow as he was. I've had to compete with some of the sharpest wits going to get my pile. A man gets in a groove in New York. It takes the West to put a razor-edge on him."
+       </p>
+       <p>
+        "Good-night, sir," said the policeman, passing on along his beat, trying doors as he went.
+       </p>
+       <p>
+        There was now a fine, cold drizzle falling, and the wind had risen from its uncertain puffs into a steady blow. The few foot passengers astir in that quarter hurried dismally and silently along with coat collars turned high and pocketed hands. And in the door of the hardware store the man who had come a thousand miles to fill an appointment, uncertain almost to absurdity, with the friend of his youth, smoked his cigar and waited.
+       </p>
+      </div>
+    </div>
+    <br   style = "clear:both;" />  
+    <div class="card" id="c3">
+      <h2>PHOTOS</h2>
+      
+      <div class="photos">
+        <div class="row"> 
+          <div class="column">
+            <img src="https://www.w3school.com.cn/i/photo/tulip-red.jpg" style="width:100%">
+            <img src="https://www.w3school.com.cn/i/photo/tulip-yellow-2.jpg" style="width:100%">
+            <img src="https://www.w3school.com.cn/i/photo/flower-2.jpg" style="width:100%">
+            <img src="https://www.w3school.com.cn/i/photo/tulip-yellow.jpg" style="width:100%">
+            <img src="https://www.w3school.com.cn/i/photo/flower-3.jpg" style="width:100%">
+            <img src="https://www.w3school.com.cn/i/photo/tulip.jpg" style="width:100%">
+            <img src="https://www.w3school.com.cn/i/photo/flower-1.jpg" style="width:100%">s
+           <img src="https://www.w3school.com.cn/i/photo/flower-4.jpg" style="width:100%">
+          </div>
+          
+          <div class="column">
+            <img src="https://www.w3school.com.cn/i/photo/tulip-yellow-2.jpg" style="width:100%">
+            <img src="https://www.w3school.com.cn/i/photo/tulip.jpg" style="width:100%">
+            <img src="https://www.w3school.com.cn/i/photo/flower-3.jpg" style="width:100%">
+            <img src="https://www.w3school.com.cn/i/photo/flower-1.jpg" style="width:100%">
+          <img src="https://www.w3school.com.cn/i/photo/flower-4.jpg" style="width:100%">
+          <img src="https://www.w3school.com.cn/i/photo/tulip-red.jpg" style="width:100%">
+            <img src="https://www.w3school.com.cn/i/photo/tulip-yellow.jpg" style="width:100%">
+            <img src="https://www.w3school.com.cn/i/photo/flower-2.jpg" style="width:100%">
+          </div>
+           
+          <div class="column">
+            <img src="https://www.w3school.com.cn/i/photo/tulip-red.jpg" style="width:100%">
+            <img src="https://www.w3school.com.cn/i/photo/tulip-yellow-2.jpg" style="width:100%">
+            <img src="https://www.w3school.com.cn/i/photo/flower-2.jpg" style="width:100%">
+            <img src="https://www.w3school.com.cn/i/photo/tulip-yellow.jpg" style="width:100%">
+            <img src="https://www.w3school.com.cn/i/photo/flower-3.jpg" style="width:100%">
+            <img src="https://www.w3school.com.cn/i/photo/tulip.jpg" style="width:100%">
+            <img src="https://www.w3school.com.cn/i/photo/flower-1.jpg" style="width:100%">
+          <img src="https://www.w3school.com.cn/i/photo/flower-4.jpg" style="width:100%">
+          </div>
+          
+          <div class="column">
+            <img src="https://www.w3school.com.cn/i/photo/tulip-yellow-2.jpg" style="width:100%">
+            <img src="https://www.w3school.com.cn/i/photo/tulip.jpg" style="width:100%">
+            <img src="https://www.w3school.com.cn/i/photo/flower-3.jpg" style="width:100%">
+            <img src="https://www.w3school.com.cn/i/photo/flower-1.jpg" style="width:100%">
+          <img src="https://www.w3school.com.cn/i/photo/flower-4.jpg" style="width:100%">
+          <img src="https://www.w3school.com.cn/i/photo/tulip-red.jpg" style="width:100%">
+            <img src="https://www.w3school.com.cn/i/photo/tulip-yellow.jpg" style="width:100%">
+            <img src="https://www.w3school.com.cn/i/photo/flower-2.jpg" style="width:100%">
+          </div>
+        </div>
+      </div>
+    </div>
+    <br   style = "clear:both;" />  
+  </div>
+
+  
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;">Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2 style="background-color: rgba(255, 255, 255, 0.5);">If need，Please send an email to zhaomuying@hnu.edu.cn</h2>
+</div>
+
+</body>
+</html>
