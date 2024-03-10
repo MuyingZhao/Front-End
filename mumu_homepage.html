@@ -13,7 +13,7 @@ body {
   background: white;
 }
 
-/* 页眉/Blog 标题 */
+/* Header/Blog title */
 .header {
   padding: 60px;
   color: white; 
@@ -42,13 +42,13 @@ h2 {
   width: auto;
 }
 
-/* 设置上导航栏的样式 */
+/* Set the style of the upper navigation bar */
 .topnav {
   overflow: hidden;
   background-color: rgb(0, 128, 128);
 }
 
-/* 设置 topnav 链接的样式 */
+/* Set the style of topnav link */
 .topnav a {
   float: left;
   width: 6%;
@@ -59,7 +59,7 @@ h2 {
   text-decoration: none;
 }
 
-/* 改变鼠标悬停时的颜色 */
+/* Change color on mouseover */
 .topnav a:hover {
   background-color: rgb(58, 80, 81);
   color: white;
@@ -74,14 +74,14 @@ h2 {
   color: white;
 }
 
-/* 创建两个不相等的彼此并排的浮动列 */
-/* 左列 */
+/* Create two unequal floating columns side by side */
+/* left column */
 .leftcolumn {   
   float: left;
   width: 75%;
 }
 
-/* 右列 */
+/* right column */
 .rightcolumn {
   float: left;
   width: 25%;
@@ -111,14 +111,14 @@ h2 {
 }
 
 
-/* 伪图像 */
+/* fake image */
 .fakeimg {
   background-color: #aaa;
   width: 100%;
   padding: 20px;
 }
 
-/* 为文章添加卡片效果 */
+/* Add card effects to articles */
 .card {
   background-color: rgb(70, 128, 128);
   padding: 20px;
@@ -162,7 +162,7 @@ h2 {
   padding: 0 4px;
 }
 
-/* 创建并排的四个等列 */
+/* Create 4 equal columns side by side */
 .column {
   flex: 25%;
   max-width: 25%;
@@ -174,14 +174,14 @@ h2 {
   vertical-align: middle;
 }
 
-/* 清除列之后的浮动 */
+/* Clear float after column */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* 页脚 */
+/* footer */
 .footer {
   padding: 20px;
   text-align: center;
@@ -191,7 +191,7 @@ h2 {
   margin-top: 20px;
 }
 
-/* 响应式布局 - 当屏幕的宽度小于 800 像素时，使两列堆叠而不是并排 */
+/* Responsive layout - makes two columns stack instead of side by side when the screen is less than 800 pixels wide */
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {   
     width: 100%;
@@ -199,7 +199,7 @@ h2 {
   }
 }
 
-/* 响应式布局 - 当屏幕的宽度小于 400 像素时，使导航链接堆叠而不是并排 */
+/* Responsive layout - makes navigation links stack instead of side by side when the screen is less than 400 pixels wide */
 @media screen and (max-width: 400px) {
   .topnav a {
     float: none;
